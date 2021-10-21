@@ -1,0 +1,26 @@
+$black: rgb(19, 18, 18);
+$white: #fff;
+$white-2: #e5e5e5;
+$grey: #cac5c5;
+$red: rgb(170, 9, 9);
+$red-2: rgb(211, 17, 17);
+$green: rgb(8, 182, 8);
+$orange: rgb(252, 167, 10);
+$radius: 0.5rem;
+$small-radius: 0.3rem;
+$space: 0.1rem;
+$shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+$transition: all 0.4s ease;
+
+%grid-center {
+    display: grid;
+    place-items: center;
+}
+
+@mixin absolute-position ($top, $left, $right, $transform) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    transform: $transform;
+}
