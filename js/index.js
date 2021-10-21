@@ -56,8 +56,8 @@ const setupForm = () => {
 
     const checkPassword = (input, value) => {
         const re = /^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$/;
-        if(!re.test(value)) displayError(input, 'Only a-z, A-Z and 0-9 symbols and at least one number and one letter!');
-        else if (value.length < 8 || value.length > 30) displayError(input, 'Must be at least 8 symbols and no more than 30 symbols!');
+        if(!re.test(value)) displayError(input, 'Only a-z, A-Z, 0-9 symbols and at least one number and one letter!');
+        else if (value.length < 8 || value.length > 30) displayError(input, 'Must be at least 8 and no more than 30 symbols!');
         else displaySuccess(input);
     };
 
